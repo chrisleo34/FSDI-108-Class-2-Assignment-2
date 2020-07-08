@@ -1,0 +1,44 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<header style="border: 1px solid black; padding-bottom: 10px; ">
+  <h1 style="color: rgb(101, 78, 110) ; margin-left: 15px;
+ text-align: center; font-family: Arial, Helvetica, sans-serif; font-style: inherit;">
+    <u>Hello Angular!!</u> </h1>
+
+  <h2 style="margin-left: 15px; font-family:'Arial Narrow', Arial, sans-serif; font-style: italic;">
+    Information</h2>
+</header>
+
+<h3 style=" padding-bottom: 20px;">{{ name }}</h3>
+
+<div style=" padding-bottom: 20px;">
+  Total to pay: {{total}}
+
+  <button (click)="test()"> Click Me! :D</button>
+</div>
+
+<hr>
+<div style=" padding-bottom: 20px; padding-top: 15px;">
+  <label style="padding: 10px;"> Confirmation & Signature: </label>
+  <input style="width:159px; padding: 10px;" type="text" [(ngModel)]="name">
+</div>
+
+<div style="text-align: center;  padding-bottom: 20px; padding-top: 15px;">
+  <app-temp-converter>
+
+  </app-temp-converter>
+</div>
+
+
+<p style="border: 1px black solid; padding: 5px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif; flex: content; justify-content: center center; text-align: center;
+  padding: 15px; color: rgb(101, 78, 110);">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui et ipsa eligendi deserunt, voluptate soluta dicta non
+  quam modi tempore similique cum aspernatur perferendis cumque dolor quis facere. Blanditiis, eius.</p>
+
+
+  <footer style="margin-top: 300px;">
+    &copy; ChristianMA
+    SDGKU university FSDI 108
+  </footer>
+
+<router-outlet></router-outlet>
